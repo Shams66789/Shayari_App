@@ -39,15 +39,17 @@ fun CategoryScreen(navController: NavController, viewModel: ShayariViewModel) {
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
-            .padding(horizontal = 10.dp),
+            .padding(horizontal = 10.dp)
+            .padding(top = 10.dp)
+        ,
 
         topBar = {
         Card(
             modifier = Modifier
-                .height(56.dp),
+                .height(50.dp),
             shape = CardDefaults.elevatedShape,
             colors = CardDefaults.cardColors(
-                containerColor = Color.Black
+                containerColor = Color.Red
             )
             ) {
             Row(horizontalArrangement = Arrangement.SpaceBetween,
@@ -83,7 +85,7 @@ fun CategoryScreen(navController: NavController, viewModel: ShayariViewModel) {
                             .height(56.dp)
                             .fillMaxWidth()
                             .clip(
-                                RoundedCornerShape(10.dp)
+                                RoundedCornerShape(50.dp)
                             )
 
                     ) {
@@ -91,7 +93,7 @@ fun CategoryScreen(navController: NavController, viewModel: ShayariViewModel) {
                             modifier = Modifier
                                 .fillMaxSize()
                                 .padding(5.dp)
-                                .background(Color.LightGray)
+                                .background(Color.Transparent)
                                 .border(2.dp, Color.Black, RoundedCornerShape(10.dp))
                                 .clickable {
                                            navController.navigate("ShayariScreen" + "/${it.id}")
@@ -99,9 +101,11 @@ fun CategoryScreen(navController: NavController, viewModel: ShayariViewModel) {
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Icon(imageVector = Icons.Outlined.Book, contentDescription = null)
+                            Icon(imageVector = Icons.Outlined.Book, contentDescription = null,
+                                modifier = Modifier.padding(start = 8.dp))
                             Text(text = it.name.toString())
-                            Icon(imageVector = Icons.Rounded.KeyboardDoubleArrowRight, contentDescription = null)
+                            Icon(imageVector = Icons.Rounded.KeyboardDoubleArrowRight, contentDescription = null,
+                                modifier = Modifier.padding(8.dp))
                         }
                     }
                 }

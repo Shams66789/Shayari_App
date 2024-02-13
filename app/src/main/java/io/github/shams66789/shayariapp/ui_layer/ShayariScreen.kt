@@ -4,6 +4,7 @@ import android.content.ClipData
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -13,15 +14,14 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.ContentCopy
 import androidx.compose.material.icons.outlined.Share
 import androidx.compose.material.icons.outlined.Whatsapp
-import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -46,15 +46,16 @@ fun ShayariScreen(allShayariList : List<AllShayari>) {
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
-            .padding(horizontal = 10.dp),
+            .padding(horizontal = 10.dp)
+            .padding(top = 10.dp),
 
         topBar = {
             Card(
                 modifier = Modifier
-                    .height(56.dp),
+                    .height(50.dp),
                 shape = CardDefaults.elevatedShape,
                 colors = CardDefaults.cardColors(
-                    containerColor = Color.Black
+                    containerColor = Color.Red
                 )
             ) {
                 Row(
@@ -72,12 +73,6 @@ fun ShayariScreen(allShayariList : List<AllShayari>) {
                             fontWeight = FontWeight.Bold
                         )
                     )
-//                    Icon(
-//                        imageVector = Icons.Rounded.Settings,
-//                        contentDescription = null,
-//                        modifier = Modifier.size(24.dp),
-//                        tint = Color.White
-//                    )
                 }
             }
         }) {
@@ -88,6 +83,7 @@ fun ShayariScreen(allShayariList : List<AllShayari>) {
                 Card(modifier = Modifier
                     .fillMaxWidth()
                     .padding(5.dp)
+                    .border(2.dp, Color.Black, RoundedCornerShape(10.dp))
                 ) {
                     Spacer(modifier = Modifier.height(10.dp))
                     Column(
