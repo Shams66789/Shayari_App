@@ -12,7 +12,7 @@ Welcome to the Shayari App repository! This Android application, developed using
 
 You can download the latest version of the Shayari App from the link below:
 
-[Download Shayari App APK](#)
+[Download Shayari App APK](https://github.com/Shams66789/Shayari_App/raw/main/APK/Shayari.apk)
 
 ## Installation
 
