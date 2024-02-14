@@ -12,8 +12,8 @@ Welcome to the Shayari App repository! This Android application, developed using
 
 Here are some screenshots of the Shayari App:
 
-![Screenshot 1](Screenshots/Shayari_home.jpg)
-![Screenshot 2](Screenshots/Shayari_screen.jpg)
+<img src="Screenshots/Shayari_home.jpg" alt="Screenshot 1" width="200"/> <img src="Screenshots/Shayari_screen.jpg" alt="Screenshot 2" width="200"/>
+
 
 ## Download
 
