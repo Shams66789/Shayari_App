@@ -8,6 +8,13 @@ Welcome to the Shayari App repository! This Android application, developed using
 - **Share with Ease:** Share your favorite Shayari via WhatsApp or other platforms with just a tap.
 - **Copy to Clipboard:** Copy Shayari to the clipboard for quick and easy sharing.
 
+## Screenshots
+
+Here are some screenshots of the Shayari App:
+
+![Screenshot 1](Screenshots/Shayari_home.jpg)
+![Screenshot 2](Screenshots/Shayari_screen.jpg)
+
 ## Download
 
 You can download the latest version of the Shayari App from the link below:
